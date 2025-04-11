@@ -7,7 +7,7 @@ import jobRoutes from "./routes/jobRoutes.js"
 const app = express()
 
 app.use(cors({
-    origin:process.env.CORS_ORIGIN,
+    origin:"http://localhost:5173",
     credentials: true
 }))
 console.log(process.env.CORS_ORIGIN)
