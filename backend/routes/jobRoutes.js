@@ -3,6 +3,7 @@ import {
   createJob,
   getAllJobs,
   updateJobStatus,
+  getJobById,
   deleteJob
 } from "../controller/jobController.js";
 
@@ -13,6 +14,8 @@ router.post('/', createJob);
 
 // Get all jobs (with optional filters)
 router.get('/', getAllJobs);
+
+router.get('/job/:id', getJobById)
 
 // Update job status
 router.patch('/:id', updateJobStatus);
