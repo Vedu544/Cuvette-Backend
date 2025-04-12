@@ -7,7 +7,7 @@ import jobRoutes from "./routes/jobRoutes.js"
 const app = express()
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://cuvette-backend-rs5z.vercel.app/",
     credentials: true
 }))
 
